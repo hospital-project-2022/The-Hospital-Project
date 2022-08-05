@@ -4,9 +4,9 @@ Patient and PatientHistory - Akshaya Dupati[n01520169]
 
 FAQ and Medicine - Santhini Sasidharan[n01479678]
 
-Departments and Doctor - Germanjeet
+Germanjeet
 
-Appointments - Elliot-Brown Ford
+Departments, Doctor and Appointments - Elliot-Brown Ford[n01526874]
 
 -------------------------------------------------------------------------------------------------------------------------
 
@@ -68,3 +68,42 @@ To Edit : /Medicines/Edit/1
 
 -------------------------------------------------------------------------------------------------------------------------
 
+**Doctor : ** - By Elliot Brown-Ford 
+
+Create new Doctor History : /Doctor/New
+
+To view Doctor history : /Doctor/Details/4
+
+To delete a Doctor history : /Doctor/DeleteConfirm/3
+
+To edit Doctor history : /Doctor/Edit/5
+
+To view a list of all the Doctor : /Doctor/List
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**Department : ** - By Elliot Brown-Ford 
+
+Create new Department History : /Department/New
+
+To view Department history : /Department/Details/4
+
+To delete a Department history : /Department/DeleteConfirm/3
+
+To edit Department history : /Department/Edit/5
+
+To view a list of all the Department : /Department/List
+
+-------------------------------------------------------------------------------------------------------------------------
+
+**Appointments : ** - By Elliot Brown-Ford 
+
+Create new Appointments History : /Appointments/New
+
+To view Appointments history : /Appointments/Details/4
+
+To delete a Appointments history : /Appointments/DeleteConfirm/3
+
+To edit Appointments history : /Appointments/Edit/5
+
+To view a list of all the Appointments : /Appointments/List
