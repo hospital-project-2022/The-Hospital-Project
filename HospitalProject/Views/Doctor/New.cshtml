@@ -1,0 +1,38 @@
+﻿
+@{ ViewBag.Title = "Create"; }
+
+<h2>Add a New Doctor</h2>
+
+<form action="/Doctor/Create" method="POST">
+    <div>
+        <label for="doctorname">Doctor Name: </label>
+        <input type="text" id="doctorname" name="doctorName" />
+    </div>
+    <div>
+        <label for="department">Department: </label>
+        <input type="text" id="department" name="Department" />
+    </div>
+    <div>
+        <label for="doctorexpertise">Doctor Expertise: </label>
+        <input type="text" id="doctorexpertise" name="DoctorExpertise" />
+    </div>
+    <div>
+        <label for="doctordesignation">Doctor Designation: </label>
+        <input type="text" id="doctordesignation" name="DoctorDesignation" />
+    </div>
+    <div>
+        <label for="doctorage">Doctor Age: </label>
+        <input type="number" id="doctorage" name="DoctorAge" />
+    </div>
+    <div>
+        <label for="doctorcontactphone">Doctor Contact Number: </label>
+        <input type="tel" id="doctorcontactphone" name="DoctorContactPhone" />
+    </div>
+    <div>
+        <label for="doctorexperience">Doctor Experience: </label>
+        <input type="date" id="doctorexperience" name="DoctorExperience" />
+    </div>
+    <div>
+        <button type="submit">Add a New Doctor</button>
+    </div>
+</form>

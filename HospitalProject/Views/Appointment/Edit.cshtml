@@ -1,0 +1,32 @@
+﻿@model HospitalProject.Models.AppointmentsDto
+@{ ViewBag.Title = "Edit"; }
+
+<h2>Update Appointment</h2>
+<nav>
+    <ul>
+        <li><a href="/Appointments/Index">Go back to home</a></li>
+
+        <li><a style="color:#ab2020;" href="/Appointments/DeleteConfirm/@Model.AppointmentsID">Delete</a></li>
+    </ul>
+</nav>
+<form action="/Appointments/Update/@Model.AppointmentsID" method="POST">
+    <div style="display:none;">
+        <input type="text" name="AppointmentsID" value="@Model.AppointmentsID" />
+    </div>
+    <div>
+        <label for="patientid">Patient ID: </label>
+        <input type="text" id="patientid" name="PatientID" />
+    </div>
+    <div>
+        <label for="doctorid">Doctor ID: </label>
+        <input type="text" id="doctorid" name="DoctorID" />
+    </div>
+    <div>
+        <label for="appointmentdateandtime">Appointment Date And Time: </label>
+        <input type="text" id="appointmentdateandtime" name="AppointmentDateAndTime" />
+    </div>
+    <div>
+        <button type="submit">Add a New Appointments</button>
+    </div>
+</form>
+

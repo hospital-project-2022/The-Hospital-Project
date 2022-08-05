@@ -1,0 +1,16 @@
+﻿@model IEnumerable<HospitalProject.Models.AppointmentsDto>
+@{ ViewBag.Title = "List"; }
+
+<h2>Appointment's List</h2>
+
+@foreach (var appointment in Model)
+{
+    <br />
+<h2>Appointments Date And Time : @appointment.AppointmentsDateAndTime</h2>
+                <div>
+                    <p>Patient Id : @appointment.PatientID</p>
+
+                </div>
+ <br />               
+ }
+

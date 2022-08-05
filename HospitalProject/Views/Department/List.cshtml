@@ -1,0 +1,12 @@
+﻿@model IEnumerable<HospitalProject.Models.DepartmentDto>
+@{ ViewBag.Title = "List"; }
+
+<h2>Department's List</h2>
+
+@foreach (var department in Model)
+{
+<br />
+<h2>Department Name : @department.DepartmentName</h2>
+<br />
+}
+

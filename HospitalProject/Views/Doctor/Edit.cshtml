@@ -1,0 +1,48 @@
+﻿@model HospitalProject.Models.DoctorDto
+@{ ViewBag.Title = "Edit"; }
+
+<h2>Update Doctor</h2>
+<nav>
+    <ul>
+        <li><a href="/Doctor/Index">Go back to home</a></li>
+
+        <li><a style="color:#ab2020;" href="/Doctor/DeleteConfirm/@Model.DoctorID">Delete</a></li>
+    </ul>
+</nav>
+<form action="/Doctor/Update/@Model.DoctorID" method="POST">
+    <div style="display:none;">
+        <input type="text" name="DoctorID" value="@Model.DoctorID" />
+    </div>
+    <div>
+        <label for="doctorname">Doctor Name: </label>
+        <input type="text" id="Doctorname" name="DoctorName" value="@Model.DoctorName" />
+    </div>
+    <div>
+        <label for="department">Department: </label>
+        <input type="text" id="department" name="Department" value="@Model.DepartmentID" />
+    </div>
+    <div>
+        <label for="doctorexpertise">Doctor Expertise: </label>
+        <input type="text" id="doctorexpertise" name="DoctorExpertise" value="@Model.DoctorExpertise" />
+    </div>
+    <div>
+        <label for="doctordesignation">Doctor Designation: </label>
+        <input type="text" id="doctordesignation" name="DoctorDesignation" value="@Model.DoctorDesignation" />
+    </div>
+    <div>
+        <label for="doctorage">Doctor Age: </label>
+        <input type="number" id="doctorage" name="DoctorAge" value="@Model.DoctorAge" />
+    </div>
+    <div>
+        <label for="doctorcontactphone">Doctor Contact Number: </label>
+        <input type="tel" id="doctorcontactphone" name="DoctorContactPhone" value="@Model.DoctorContactNumber" />
+    </div>
+    <div>
+        <label for="doctorexperience">Doctor Experience: </label>
+        <input type="date" id="doctorexperience" name="DoctorExperience" value="@Model.DoctorExperience" />
+    </div>
+    <div>
+        <button type="submit">Add a New Doctor</button>
+    </div>
+</form>
+

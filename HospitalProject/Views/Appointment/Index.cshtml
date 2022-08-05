@@ -1,0 +1,13 @@
+﻿
+@{ ViewBag.Title = "Index"; }
+
+<h2>Please type in your Appointment ID to view information:</h2>
+<form action="/Appointments/Details" method="POST">
+    <label for="id">Enter your Appointments ID: </label>
+    <input type="text" id="id" name="id" />
+    <button type="submit">Submit</button>
+</form>
+<div>
+    <a href="/Appointments/New">Add A New Appointments</a>
+</div>
+

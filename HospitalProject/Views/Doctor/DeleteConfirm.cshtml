@@ -1,0 +1,22 @@
+﻿@model HospitalProject.Models.DoctorDto
+
+@{ ViewBag.Title = "DeleteConfirm"; }
+
+<h2>Are you sure you want to delete this Doctor?</h2>
+<nav>
+    <ul>
+        <li><a href="/Doctor/Index">Cancel</a></li>
+        <li><a href="/Doctor/Edit/@Model.DoctorID">Update</a></li>
+    </ul>
+</nav>
+<h3>@Model.DoctorName</h3>
+<div>Department Id: @Model.DepartmentID </div>
+<div>Doctor Expertise: @Model.DoctorExpertise</div>
+<div>Department Id: @Model.Age </div>
+<div>Doctor Designation: @Model.DoctorDesignation</div>
+<div>Doctor Age: @Model.DoctorAge </div>
+<div>Doctor Contact Number: @Model.DoctorContactNumber</div>
+<div>Doctor Experience: @Model.DoctorExperience </div>
+<form action="/Doctor/Delete/@Model.DoctorID" method="POST">
+    <input type="submit" value="Confirm Delete" />
+</form>

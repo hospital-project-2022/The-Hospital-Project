@@ -39,6 +39,12 @@ namespace HospitalProject.Models
         //add patienthistory to the system
         public DbSet<PatientHistory> PatientHistories { get; set; }
 
+        public DbSet<Doctor> Doctors { get; set; }
+
+        public DbSet<Department> Departments { get; set; }
+
+        public DbSet<Appointments> Appointment { get; set; }
+
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

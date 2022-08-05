@@ -1,0 +1,22 @@
+﻿
+@{ ViewBag.Title = "Create"; }
+
+<h2>Add a New Appointments</h2>
+
+<form action="/Appointments/Create" method="POST">
+    <div>
+        <label for="patientid">Patient ID: </label>
+        <input type="text" id="patientid" name="PatientID" />
+    </div>
+    <div>
+        <label for="doctorid">Doctor ID: </label>
+        <input type="text" id="doctorid" name="DoctorID" />
+    </div>
+    <div>
+        <label for="appointmentdateandtime">Appointment Date And Time: </label>
+        <input type="text" id="appointmentdateandtime" name="AppointmentDateAndTime" />
+    </div>
+    <div>
+        <button type="submit">Add a New Appointments</button>
+    </div>
+</form>
